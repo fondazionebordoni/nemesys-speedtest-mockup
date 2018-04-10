@@ -1,0 +1,18 @@
+{
+  "name": "download-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luca Pellegrini",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.6.6",
+    "events": "^2.0.0",
+    "http": "0.0.0",
+    "serve-static": "^1.13.2",
+    "url": "^0.11.0"
+  }
+}

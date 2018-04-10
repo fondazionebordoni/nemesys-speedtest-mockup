@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Calculator Add Example</title>
+</head>
+<body>
+  <p>Speed: <output id="result">0.0</output></p>
+  <button onclick="startWorker()">Start</button>
+  <script>
+	var w;
+	function startWorker() {
+		if(typeof(w) == "undefined") {
+			w = new Worker("worker2.js");
+		}
+	
+		w.onmessage = function(event) {
+			document.getElementById("result").innerHTML = event.data;
+		};
+	}
+  </script>
+</body>
+</html>
